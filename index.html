@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;family=Sono&amp;display=swap" rel="stylesheet">
+  <title>Personal Library</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Personal Library</h2>
+    <!-- <h6>Add a book and manage your personal library</h6> -->
+    <span class="search-field">
+      <input class="search-box" type="search" placeholder="Search for a book title or manually add it below ...">
+    </span>
+    <p class="empty-line"></p>
+    <form id="book-form">
+      <div class="title">
+        <label for="title">Title</label>
+        <input type="text" id="title" placeholder="Harry Potter and the Chamber of Secrets">
+      </div>
+      <div class="author">
+        <label for="author">Author</label>
+        <input type="text" id="author" placeholder="J. K. Rowling">
+      </div>
+      <div class="isbn">
+        <label for="isbn">ISBN #</label>
+        <input type="text" id="isbn" placeholder="32933423423">
+      </div>
+      <div class="submit-button">
+        <input id="submit" type="submit" value="Add your book" class="btn">
+      </div>
+    <hr>
+    </form>
+    <div class="table-wrapper">
+      <div class="table-scroll">
+        <table class="table">
+          <thead>
+            <tr class="first-tr">
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN #</th>
+              <th class="th-remove">Sold / lost the book?</th>
+            </tr>
+          </thead>
+          <tbody id="book-list">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer>© Unsplash & Nejc Furh, 2023</footer>
+  <script src="app.js"></script>
+</body>
+</html>
