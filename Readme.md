@@ -13,3 +13,5 @@ This project was instructed as very basic DOM manipulation exercise and as an ad
 Code is reusable by anyone. 
 
 Open to additional suggestions regarding code usage/better coding with DRY principle in mind.
+
+![Preview Personal Library](https://github.com/NF-7/Personal-Library/assets/101887698/c168fc42-cf66-4215-8d06-81889956346b)
