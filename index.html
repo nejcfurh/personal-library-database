@@ -20,7 +20,7 @@
     <form id="book-form">
       <div class="title">
         <label for="title">Title</label>
-        <input type="text" id="title" placeholder="Harry Potter and the Chamber of Secrets">
+        <input type="text" id="title" placeholder="Harry Potter and ...">
       </div>
       <div class="author">
         <label for="author">Author</label>
@@ -40,10 +40,12 @@
         <table class="table">
           <thead>
             <tr class="first-tr">
-              <th>Title</th>
-              <th>Author</th>
-              <th>ISBN #</th>
-              <th class="th-remove">Sold / lost the book?</th>
+              <div class="th-list">
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN #</th>
+                <th class="th-remove">Sold / lost the book?</th>
+              </div>
             </tr>
           </thead>
           <tbody id="book-list">
@@ -52,6 +54,39 @@
       </div>
     </div>
   </div>
+
+  <div style="display:flex; justify-content: space-around;">
+    <button class="info-button" data-modal-target="#modal">Info</button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">
+          Personal Library by <b>Nejc Furh</b>
+        </div>
+        <button data-close-button class="close-button">&times;</button>
+        </div>
+      <div class="modal-body">
+          The idea of the project was to create a personal collection of books (or it can really be used for any other item if we change the HTML elements). 
+
+          You can either add the books manually or help yourself with the <strong>OpenLibrary API</strong>
+
+          In the app.js file, there are separators in order to easily look over the code and what every instance of it does. This particular project focuses on the "class-based" approach when writing vanilla JS code.
+
+          Included are the functions to construct books, UI and the sessionManager, create additional buttons, etc.
+
+          There are no limits to how many items could be added or how many can be edited or removed.
+
+          This project was instructed as very basic DOM manipulation exercise and as an additional lessons in DOM manipulation in order to deepen javascript knowledge.
+
+          Code is reusable by anyone. Open to additional suggestions regarding code usage/better coding with DRY principle in mind.
+            
+          <strong>Created by Nejc Furh with inspiration from multiple sources on <i>Udemy</i> and <i>YouTube</i>.</strong>
+    </div>
+  </div>
+  <div id="overlay"></div>
+</div>
+
+
+
   <footer>© Unsplash & Nejc Furh, 2023</footer>
   <script src="app.js"></script>
 </body>
