@@ -140,7 +140,7 @@ class UI {
         setTimeout(function() {
             const ui = new UI()
             ui.container.removeChild(alert)
-        }, 2000);
+        }, 1500);
     }
 
 }
